@@ -11,17 +11,34 @@
 		<header>
 			<h2>Speech Recognition System</h2>
 		</header>
-		<div class="btnStartStop">
-			<button id="btnStartRecord">Start recording</button>
-			<button id="btnStopRecord">Stop recording</button>
-		</div>
-		<textarea  id="texto" cols="30" rows="10"></textarea>
-		<p class="writenText">Do you want or need to listen the text writen?</p>
-		<button id="btnPlayText">Listen</button>
-		<a class="contact" href="mailto:nora.gonzalo@gmail.com" class="start">Contact</a>
-	</div>
-	
+		<section class="instructions-container">
+			<p class="instructions1">Hi, I'm a basic voice recognition system.</p>
+			<p class="instructions1">USE ME:</p>
+			<p class="instructions2">1. Press the "start" button to start the recording</p>
+			<p class="instructions2">2. When you stop talking, the text will be processed and written in the box</p>
+			<p class="instructions2">3. Voice Recognition it's done</p>
+			<p class="instructions2">4. Press "clear" button to clear the text box</p>
+			<p class="instructions2">Repeat previous steps as you need</p>
+			<p class="instructions2">To finish the experience, press "stop" button</p>
 
+		</section>
+		<section class="recordText">
+			<div class="btnStartStop">
+				<button id="btnStartRecord">Start recording</button>
+				<button id="btnStopRecord">Stop recording</button>
+			</div>
+			<textarea  id="output" cols="30" rows="10" placeholder="Your speech recognized text will be written here..."></textarea>
+			<input type="button" value="Clear" id="clear">
+		</section>
+		<section class="listenText">
+			<p class="writtenText">Do you want or need to listen the text written?</p>
+			<button id="btnPlayText">Listen</button>
+		</section>
+		
+	</div>
 	<script src="index.js"></script>
 </body>
+<footer>
+	<a class="contact" href="mailto:nora.gonzalo@gmail.com" class="start">Contact</a>
+</footer>
 </html>
